@@ -1,0 +1,10 @@
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.csproj.AssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.Properties.Resources.resources
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.csproj.GenerateResource.cache
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\bin\Debug\form.exe.config
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\bin\Debug\form.exe
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\bin\Debug\form.pdb
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.exe
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.pdb
+C:\Users\user\Documents\Visual Studio 2022\graph\screen_locker\form\form\obj\Debug\form.Form1.resources
