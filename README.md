@@ -11,7 +11,7 @@ This repository contains a simple C# Windows Forms application that functions as
 - **Prevent Premature Closing:** The application prevents the user from closing the window before the countdown ends.
 ## Code Highlights
 - **Countdown Logic:**  
-```
+```C#
 // Timer event handler
 private void Timer_Tick(object sender, EventArgs e)
 {
@@ -30,7 +30,7 @@ private void Timer_Tick(object sender, EventArgs e)
 }
 ```
 - **Automatic Closure:**
-```
+```C#
 // Automatically close the form after a delay
 Task.Delay(10000).ContinueWith(_ =>
 {
@@ -44,7 +44,7 @@ Task.Delay(10000).ContinueWith(_ =>
 });
 ```
 - **User Restriction:**
-```
+```C#
 // Prevent premature closure
 protected override void OnFormClosing(FormClosingEventArgs e)
 {
