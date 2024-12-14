@@ -9,5 +9,51 @@ This repository contains a simple C# Windows Forms application that functions as
 - **Auto Close:** Automatically closes the lock screen after the countdown reaches zero.
 - **Manual Close Button:** A "Close" button becomes available after the timer finishes, allowing manual dismissal.
 - **Prevent Premature Closing:** The application prevents the user from closing the window before the countdown ends.
+## Code Highlights
+- **Countdown Logic:**  
+```
+// Timer event handler
+private void Timer_Tick(object sender, EventArgs e)
+{
+    remainingTime--; // Decrease the remaining time by 1 second
 
+    if (remainingTime >= 0)
+    {
+        counterLabel.Text = $"Remaining Time: {remainingTime} seconds";
+    }
+    else
+    {
+        counterLabel.Text = "Time's up!";
+        timer.Stop();
+        // Additional actions for closing functionality...
+    }
+}
+```
+- **Automatic Closure:**
+```
+// Automatically close the form after a delay
+Task.Delay(10000).ContinueWith(_ =>
+{
+    if (!this.IsDisposed)
+    {
+        this.Invoke(new Action(() =>
+        {
+            this.Close();
+        }));
+    }
+});
+```
+- **User Restriction:**
+```
+// Prevent premature closure
+protected override void OnFormClosing(FormClosingEventArgs e)
+{
+    if (e.CloseReason == CloseReason.UserClosing && !counterDown)
+    {
+        e.Cancel = true; // Cancel the closing operation
+    }
+
+    base.OnFormClosing(e);
+}
+```
 
